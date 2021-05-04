@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" type="image/png" href="./icon/MI.png"> 
+    <link rel="apple-change-icon" type="image/png" href="./icon/MI.png"> 
+    <link rel="icon" type="image/png" href="./icon/MI.png"> 
+    <title>Firebase CRUD App (Posting App)</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-container"></div>
+            <div class="menu-bar">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Banner Section -->
+    <div class="banner-container">
+        <div class="container">
+            <div class="banner-content">
+                <h2>WELCOME TO <span style="color: deepskyblue;">FIREBASE</span> CRUD APP</h2>
+                <p>Share your taught with us.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-wrapper">
+        <div class="m-container">
+            <div class="m-header">Login <div class="close">x</div></div>
+            <div class="m-body">
+                <form id="loginForm">
+                    <input class="m-input" type="email" name="email" placeholder="Email..." />
+                    <input class="m-input" type="password" name="password" placeholder="Password..." />
+                    <input class="m-bt" type="submit" value="Submit" />
+                </form>
+                <p>Didn't have an account? <button class="bt-outline-sm register">Register</button></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Form -->
+    <div class="register-wrapper">
+        <div class="m-container">
+            <div class="m-header">Register <div class="close">x</div></div>
+            <div class="m-body">
+                <form id="registerForm">
+                    <input class="m-input" type="email" name="email" placeholder="Email..." />
+                    <input class="m-input" type="password" name="password" placeholder="Password..." />
+                    <input class="m-input" type="password" name="vpassword" placeholder="Confirm Password..." />
+                    <input class="m-bt" type="submit" value="Submit" />
+                </form>
+                <p>Already have an account? <button class="bt-outline-sm login">Login</button></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Form -->
+    <div class="post-wrapper">
+        <div class="m-container">
+            <div class="m-header">Post <div class="close">x</div></div>
+            <div class="m-body">
+                <form id="postForm">
+                    <input class="m-input" type="text" name="title" placeholder="Title..." />
+                    <input class="m-input" type="text" name="imageURL" placeholder="ImageURL..." />
+                    <textarea name="content"></textarea>
+                    <input class="m-bt" type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Post Form -->
+    <div class="edit-post-wrapper"></div>
+
+    <!-- All Post Section -->
+    <div class="container">
+        <div class="all-post-container"></div>
+    </div>
+
+    <!-- Read More Section -->
+    <div class="container">
+        <div class="read-more-wrapper"></div>
+    </div>
+
+    <!-- Success or Error Message -->
+    <div class="message-container"></div>
+
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.4.2/firebase-app.js"></script>
+<script src="/__/firebase/8.4.2/firebase-auth.js"></script>
+<script src="/__/firebase/8.4.2/firebase-firestore.js"></script>
+<script src="/__/firebase/8.4.2/firebase-functions.js"></script>
+<script src="/__/firebase/8.4.2/firebase-analytics.js"></script>
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js?useEmulator=true"></script>
+<script src="./js/index.js"></script>
+</html>
